@@ -5,6 +5,7 @@ library(IntrinioSDK)
 library(dplyr)
 library(tidyr)
 library(purrr)
+library(tibble)
 options(warn=-1)
 
 
@@ -379,7 +380,7 @@ gather_stock_returns <- function(api_key, ticker, buy_date, sell_date) {
 
   }
 
-  result <- tibble('Stock' = ticker,
+  result <- tibble::tibble('Stock' = ticker,
           'Buy date' = buy_date,
           'Buy price' = rcd_buy_price,
           'Sell date' = sell_date,
