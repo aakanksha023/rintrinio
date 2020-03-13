@@ -3,7 +3,6 @@
 
 library(IntrinioSDK)
 library(dplyr)
-library(tidyr)
 library(purrr)
 options(warn=-1)
 
