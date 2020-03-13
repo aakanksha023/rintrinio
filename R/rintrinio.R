@@ -389,5 +389,4 @@ gather_stock_returns <- function(api_key, ticker, buy_date, sell_date) {
         )
 
   return(result)
-
 }
