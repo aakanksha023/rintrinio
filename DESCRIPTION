@@ -1,5 +1,5 @@
 Package: rintrinio
-Title: R package that draws needed data from intrinio API objects.
+Title: R package that draws needed data from intrinio API objects
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Roc",
@@ -20,6 +20,6 @@ BugReports: https://github.com/sirine-chahma/rintrinio/issues
 Imports: 
     dplyr,
     purrr,
-    tidyr,
     IntrinioSDK,
     utils
+VignetteBuilder: knitr
