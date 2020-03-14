@@ -74,6 +74,11 @@ jobs:
       - name: Check
         run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "warning", check_dir = "check")
         shell: Rscript {0}
+      
+      - name: Test coverage
+          if: matrix.config.os == 'ubuntu-16.04' && matrix.config.r == '3.6'
+          run: covr::codecov()
+          shell: Rscript {0}
 
       - name: Upload check results
         if: failure()
@@ -82,8 +87,5 @@ jobs:
           name: ${{ runner.os }}-r${{ matrix.config.r }}-results
           path: check
           
-      - name: Test coverage
-          if: matrix.config.os == 'ubuntu-16.04' && matrix.config.r == '3.6'
-          run: covr::codecov()
-          shell: Rscript {0}
+      
 
