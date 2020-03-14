@@ -81,7 +81,13 @@ jobs:
         with:
           name: ${{ runner.os }}-r${{ matrix.config.r }}-results
           path: check
-       - name: Upload coverage to Codecov  
+      - name: Upload a coverage report
+        run: |
+          install.packages("covr")
+          library("covr")
+          covr::report()
+        shell: Rscript {0}
+      - name: Upload coverage to Codecov  
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
