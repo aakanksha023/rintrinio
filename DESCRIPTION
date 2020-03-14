@@ -23,6 +23,6 @@ Imports:
     dplyr,
     purrr,
     IntrinioSDK,
-    ggplot,
+    ggplot2,
     utils
 VignetteBuilder: knitr
