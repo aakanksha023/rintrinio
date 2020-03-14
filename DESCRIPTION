@@ -24,6 +24,5 @@ Imports:
     purrr,
     IntrinioSDK,
     utils,
-    ggplot2,
-
+    ggplot2
 VignetteBuilder: knitr
