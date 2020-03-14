@@ -1,0 +1,11 @@
+--- re-building ‘rintrinio-vignette.Rmd’ using rmarkdown
+Quitting from lines 75-82 (rintrinio-vignette.Rmd) 
+Error: processing vignette 'rintrinio-vignette.Rmd' failed with diagnostics:
+`data` must be a data frame, or other object coercible by `fortify()`, not a character vector
+--- failed re-building ‘rintrinio-vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘rintrinio-vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

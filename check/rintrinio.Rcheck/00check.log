@@ -1,0 +1,98 @@
+* using log directory ‘/Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck’
+* using R version 3.6.1 (2019-07-05)
+* using platform: x86_64-apple-darwin15.6.0 (64-bit)
+* using session charset: UTF-8
+* using option ‘--no-manual’
+* checking for file ‘rintrinio/DESCRIPTION’ ... OK
+* this is package ‘rintrinio’ version ‘0.0.0.9000’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘rintrinio’ can be installed ... WARNING
+Found the following significant warnings:
+  Warning: /Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00_pkg_src/rintrinio/man/gather_stock_time_series.Rd:23: unknown macro '\item'
+  Warning: /Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00_pkg_src/rintrinio/man/gather_stock_time_series.Rd:25: unknown macro '\item'
+  Warning: /Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00_pkg_src/rintrinio/man/gather_stock_time_series.Rd:27: unexpected section header '\value'
+  Warning: /Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00_pkg_src/rintrinio/man/gather_stock_time_series.Rd:30: unexpected section header '\description'
+  Warning: /Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00_pkg_src/rintrinio/man/gather_stock_time_series.Rd:34: unexpected section header '\examples'
+  Warning: /Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00_pkg_src/rintrinio/man/gather_stock_time_series.Rd:37: unexpected END_OF_INPUT '
+See ‘/Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00install.out’ for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... WARNING
+prepare_Rd: man/gather_stock_time_series.Rd:23: unknown macro '\item'
+prepare_Rd: man/gather_stock_time_series.Rd:25: unknown macro '\item'
+prepare_Rd: man/gather_stock_time_series.Rd:27: unexpected section header '\value'
+prepare_Rd: man/gather_stock_time_series.Rd:30: unexpected section header '\description'
+prepare_Rd: man/gather_stock_time_series.Rd:34: unexpected section header '\examples'
+prepare_Rd: man/gather_stock_time_series.Rd:37: unexpected END_OF_INPUT '
+'
+checkRd: (5) gather_stock_time_series.Rd:0-39: Must have a \description
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'gather_stock_time_series'
+  ‘end_date’ ‘allow_max_rows’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking installed files from ‘inst/doc’ ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... OK
+  Running ‘testthat.R’
+* checking for unstated dependencies in vignettes ... NOTE
+'library' or 'require' calls not declared from:
+  ‘devtools’ ‘ggplot2’
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ... NONE
+  ‘rintrinio-vignette.Rmd’using ‘UTF-8’... OK
+* checking re-building of vignette outputs ... WARNING
+Error(s) in re-building vignettes:
+  ...
+--- re-building ‘rintrinio-vignette.Rmd’ using rmarkdown
+Quitting from lines 75-82 (rintrinio-vignette.Rmd) 
+Error: processing vignette 'rintrinio-vignette.Rmd' failed with diagnostics:
+`data` must be a data frame, or other object coercible by `fortify()`, not a character vector
+--- failed re-building ‘rintrinio-vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘rintrinio-vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* DONE
+Status: 4 WARNINGs, 1 NOTE

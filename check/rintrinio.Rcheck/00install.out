@@ -1,0 +1,20 @@
+* installing *source* package ‘rintrinio’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+Warning: /Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00_pkg_src/rintrinio/man/gather_stock_time_series.Rd:23: unknown macro '\item'
+Warning: /Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00_pkg_src/rintrinio/man/gather_stock_time_series.Rd:25: unknown macro '\item'
+Warning: /Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00_pkg_src/rintrinio/man/gather_stock_time_series.Rd:27: unexpected section header '\value'
+Warning: /Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00_pkg_src/rintrinio/man/gather_stock_time_series.Rd:30: unexpected section header '\description'
+Warning: /Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00_pkg_src/rintrinio/man/gather_stock_time_series.Rd:34: unexpected section header '\examples'
+Warning: /Users/aakankshadimri/Downloads/rintrinio/check/rintrinio.Rcheck/00_pkg_src/rintrinio/man/gather_stock_time_series.Rd:37: unexpected END_OF_INPUT '
+'
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rintrinio)

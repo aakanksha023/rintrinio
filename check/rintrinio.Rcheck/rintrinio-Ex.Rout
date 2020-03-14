@@ -1,0 +1,191 @@
+
+R version 3.6.1 (2019-07-05) -- "Action of the Toes"
+Copyright (C) 2019 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "rintrinio"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('rintrinio')
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("gather_financial_statement_company_compare")
+> ### * gather_financial_statement_company_compare
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: gather_financial_statement_company_compare
+> ### Title: Given the tickers, statement, year and period returns all the
+> ###   information from the Intrinio API fundamental reported financials for
+> ###   that time and those tickers as a dataframe
+> ### Aliases: gather_financial_statement_company_compare
+> 
+> ### ** Examples
+> 
+> gather_financial_statement_company_compare('OjhlMjhjNTBmY2IyMWJiMWE0MTExYjQwNWZmZTVkZWM1', c('AAPL', 'CSCO'), 'income_statement', '2019', 'Q1')
+Warning: Column `name` joining factors with different levels, coercing to character vector
+                              name          value.x          value.y
+1                           ticker             AAPL             CSCO
+2                        statement income_statement income_statement
+3                             year             2019             2019
+4                           period               Q1               Q1
+5                 operatingrevenue       -8.431e+10      -1.3072e+10
+6                     totalrevenue       -8.431e+10      -1.3072e+10
+7           operatingcostofrevenue       5.2279e+10        4.926e+09
+8               totalcostofrevenue       5.2279e+10        4.926e+09
+9                 totalgrossprofit      -3.2031e+10       -8.146e+09
+10                      sgaexpense        4.783e+09         2.11e+08
+11                       rdexpense        3.902e+09        1.608e+09
+12          totaloperatingexpenses        8.685e+09        4.341e+09
+13            totaloperatingincome      -2.3346e+10       -3.805e+09
+14                     otherincome         -5.6e+08          1.9e+07
+15                totalotherincome         -5.6e+08        -1.04e+08
+16               totalpretaxincome      -2.3906e+10       -3.909e+09
+17                incometaxexpense        3.941e+09          3.6e+08
+18             netincomecontinuing      -1.9965e+10       -3.549e+09
+19                       netincome      -1.9965e+10       -3.549e+09
+20               netincometocommon      -1.9965e+10       -3.549e+09
+21        weightedavebasicsharesos      -4735820000       -4.565e+09
+22                        basiceps            -4.22            -0.78
+23      weightedavedilutedsharesos      -4773252000       -4.614e+09
+24                      dilutedeps            -4.18            -0.77
+25 weightedavebasicdilutedsharesos       -4.731e+09        -4.55e+09
+26                 basicdilutedeps            -4.22            -0.78
+27           cashdividendspershare            -0.73            -0.33
+28                marketingexpense             <NA>         2.41e+09
+29             amortizationexpense             <NA>          3.4e+07
+30             restructuringcharge             <NA>          7.8e+07
+31            totalinterestexpense             <NA>         2.21e+08
+32             totalinterestincome             <NA>        -3.44e+08
+> 
+> 
+> 
+> cleanEx()
+> nameEx("gather_financial_statement_time_series")
+> ### * gather_financial_statement_time_series
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: gather_financial_statement_time_series
+> ### Title: Given the ticker, statement, year(s) and period(s) return the
+> ###   complete available financial information from the Intrinio API stock
+> ###   data
+> ### Aliases: gather_financial_statement_time_series
+> 
+> ### ** Examples
+> 
+> gather_financial_statement_time_series('OjhlMjhjNTBmY2IyMWJiMWE0MTExYjQwNWZmZTVkZWM1', 'CVX', 'income_statement', c('2017','2018'), c('Q1','Q3'))
+                                type        fin_value       fin_value.
+1                             ticker              CVX              CVX
+2                          statement income_statement income_statement
+3                               year             2017             2017
+4                             period               Q1               Q3
+5                   operatingrevenue      -3.3421e+10      -3.6205e+10
+6                       totalrevenue      -3.3421e+10      -3.6205e+10
+7             operatingcostofrevenue       1.7506e+10       1.8776e+10
+8                 totalcostofrevenue       1.7506e+10       1.8776e+10
+9                   totalgrossprofit      -1.5915e+10      -1.7429e+10
+10                        sgaexpense        5.396e+09        5.956e+09
+11                explorationexpense         1.44e+08         2.39e+08
+12               depreciationexpense        4.194e+09        5.109e+09
+13            otheroperatingexpenses        3.001e+09        3.432e+09
+14            totaloperatingexpenses       1.2735e+10       1.4736e+10
+15              totaloperatingincome        -3.18e+09       -2.693e+09
+16              totalinterestexpense          5.1e+07          3.5e+07
+17                  totalotherincome          5.1e+07          3.5e+07
+18                 totalpretaxincome       -3.129e+09       -2.658e+09
+19                  incometaxexpense          4.3e+08         6.72e+08
+20               netincomecontinuing       -2.699e+09       -1.986e+09
+21                         netincome       -2.699e+09       -1.986e+09
+22 netincometononcontrollinginterest          1.7e+07          3.4e+07
+23                 netincometocommon       -2.682e+09       -1.952e+09
+24          weightedavebasicsharesos      -1879372000      -1882650000
+25                          basiceps            -1.43            -1.03
+26        weightedavedilutedsharesos      -1895393000      -1895879000
+27                        dilutedeps            -1.41            -1.03
+28   weightedavebasicdilutedsharesos      -1875500000      -1895100000
+29                   basicdilutedeps            -1.43            -1.03
+30             cashdividendspershare            -1.08            -1.08
+        fin_value..     fin_value...
+1               CVX              CVX
+2  income_statement income_statement
+3              2018             2018
+4                Q1               Q3
+5       -3.7764e+10      -4.3987e+10
+6       -3.7764e+10      -4.3987e+10
+7        2.1233e+10       2.4681e+10
+8        2.1233e+10       2.4681e+10
+9       -1.6531e+10      -1.9306e+10
+10        5.424e+09        6.003e+09
+11         1.58e+08         6.25e+08
+12        4.289e+09         5.38e+09
+13        1.428e+09        1.417e+09
+14       1.1299e+10       1.3425e+10
+15       -5.232e+09       -5.881e+09
+16         1.59e+08         1.82e+08
+17         1.59e+08         1.82e+08
+18       -5.073e+09       -5.699e+09
+19         1.41e+09        1.643e+09
+20       -3.663e+09       -4.056e+09
+21       -3.659e+09       -4.056e+09
+22          2.1e+07            9e+06
+23       -3.638e+09       -4.047e+09
+24      -1895990000      -1900717000
+25            -1.92            -2.13
+26      -1913218000      -1917474000
+27             -1.9            -2.11
+28      -1894800000         -1.9e+09
+29            -1.92            -2.13
+30            -1.12            -1.12
+> 
+> 
+> 
+> cleanEx()
+> nameEx("gather_stock_returns")
+> ### * gather_stock_returns
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: gather_stock_returns
+> ### Title: Given the tickers, buy-in date, sell-out date, returns the
+> ###   historical prices and profit/loss
+> ### Aliases: gather_stock_returns
+> 
+> ### ** Examples
+> 
+> gather_stock_returns('OjhlMjhjNTBmMWJiMWE0MTExYjQwNWZmZTVkZWM1', c('AAPL', 'CSCO'), "2017-12-31", "2019-03-01")
+[1] "Invalid API Key: please input a valid API key as a string"
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> cleanEx()
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  1.038 0.073 2.191 0.002 0.003 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')

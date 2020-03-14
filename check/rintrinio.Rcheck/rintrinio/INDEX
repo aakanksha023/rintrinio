@@ -1,0 +1,17 @@
+gather_financial_statement_company_compare
+                        Given the tickers, statement, year and period
+                        returns all the information from the Intrinio
+                        API fundamental reported financials for that
+                        time and those tickers as a dataframe
+gather_financial_statement_time_series
+                        Given the ticker, statement, year(s) and
+                        period(s) return the complete available
+                        financial information from the Intrinio API
+                        stock data
+gather_stock_returns    Given the tickers, buy-in date, sell-out date,
+                        returns the historical prices and profit/loss
+gather_stock_time_series
+                        Given the ticker, start date, and end date,
+                        return from the Intrinio API stock data for
+                        that time frame in either a dictionary or a
+                        pandas dataframe format.
